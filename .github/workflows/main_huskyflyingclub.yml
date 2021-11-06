@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'HuskyFlyingClub'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DDB239ADA94041F3ACF521516AB84271 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DE9AB202D33B4DA5A25F73E02631157E }}
           package: .
