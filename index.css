@@ -8,20 +8,23 @@ body {
 }
 
 #title {
-    color: white;
-    margin: 0;
-    padding: 0;
-    font-size: 22pt;
-    font-weight: 700;
-    font-family: 'Castoro', sans-serif;
-    opacity: 1;
+  color: white;
+  margin: 0;
+  margin-top: 3px;
+  margin-left: 5px;
+  padding: 0;
+  font-size: 22pt;
+  font-weight: 700;
+  font-family: 'Castoro', sans-serif;
+  opacity: 1;
 }
 
 /* The navigation bar */
 .navbar {
   font-size: 14pt;
   overflow: hidden;
-  background-color: #333;
+  /* background-color: #333; */
+  background-color: black;
   position: static; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   margin-left: 10px;
@@ -65,6 +68,7 @@ body {
 }
   
 .card {
+  background-color: #333;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
 }
@@ -85,10 +89,6 @@ body {
   content: "";
   clear: both;
   display: table;
-}
-
-.title {
-  color: grey;
 }
   
 .button {
@@ -112,4 +112,54 @@ body {
     width: 100%;
     display: block;
   }
+}
+
+.content-wrapper {
+  color: white;
+  margin: auto;
+  padding: 80px 0;
+  width: 90vw
+}
+
+.content-wrapper>p {
+  text-align: center
+}
+
+.event-card {
+  color: black;
+  background: #cbc3e3;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px 20px
+}
+
+.info-card-container {
+  text-align: center
+}
+
+.info-card {
+  color: white;
+  display: inline-block;
+  margin: 10px;
+  padding: 20px
+}
+
+.recruitment-events .content-wrapper figure {
+  margin-left: 0
+}
+
+.recruitment-events .content-wrapper figcaption {
+  align-items: flex-start;
+  justify-content: flex-start
+}
+
+.sponsors {
+  position: center;
+  color: white;
+  padding: 0 20px
+}
+
+.sponsors p {
+  color: white;
+  text-align: center
 }
