@@ -46,7 +46,6 @@ body {
 
 .footer {
   font-size: 18pt;
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -65,52 +64,52 @@ body {
   padding: 0 8px;
 }
   
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
-  }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
   
-  .about-section {
-    padding: 50px;
-    text-align: center;
-    background-color: #474e5d;
-    color: white;
-  }
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+ 
+.container {
+  color: white;
+  padding: 0 16px;
+}
+ 
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
   
-  .container {
-    color: white;
-    padding: 0 16px;
-  }
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
   
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+.button:hover {
+  background-color: #555;
+}
   
-  .title {
-    color: grey;
-  }
-  
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
+@media screen and (max-width: 650px) {
+  .column {
     width: 100%;
+    display: block;
   }
-  
-  .button:hover {
-    background-color: #555;
-  }
-  
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
+}
