@@ -9,20 +9,11 @@ body {
   background-color: #03a9f4;
 }
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-
 header {
   position: absolute;
-  top: 0;
-  left: 0;
-  margin-bottom: 10%;
+  top: 0; left: 0;
   width: 100%;
-  padding: 40px 100px;
+  padding: 2.5% 8%;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -39,13 +30,13 @@ header .logo {
   right: 0; bottom: 0;
   min-width: 100%; min-height: 100%;
   width: auto; height: auto;
-  background: #03a9f4;
-  /* mix-blend-mode: overlay; */
+  /* background: #03a9f4; */
+  mix-blend-mode: overlay;
 }
 
 .showcase {
   position: fixed;
-  right: 0; bottom: 0;
+  left: 0; right: 0; bottom: 0;
   min-width: 100%; min-height: 100%;
   width: auto; height: auto;
   padding: 100px;
@@ -65,37 +56,39 @@ header .logo {
   min-width: 100%; min-height: 100%;
   width: auto; height: auto;
   object-fit: cover;
-  opacity: 0.8;
+  /* opacity: 1.0; */
 }
 .overlay {
   position: fixed;
   right: 0; bottom: 0;
   min-width: 100%; min-height: 100%;
   width: auto; height: auto;
-  background: #03a9f4;
+  /* background: #03a9f4; */
   mix-blend-mode: overlay;
 }
 
 .text {
-  position: relative;
+  left: 10%;
+  top: 40%;
+  position: fixed;
   z-index: 10;
 }
-.text h2 {
-  font-size: 5em;
+.header h2 {
+  font-size: 3.2em;
   font-weight: 800;
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
 }
 .text h3 {
-  font-size: 4em;
-  font-weight: 700;
+  font-size: 3em;
+  font-weight: 600;
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
 }
 .text p {
-  font-size: 1.1em;
+  font-size: 1.5em;
   color: #fff;
   margin: 20px 0;
   font-weight: 400;
@@ -121,7 +114,7 @@ header .logo {
 .social {
   position: fixed; bottom: 0;
   z-index: 10;
-  left: 4%;
+  left: 8%;
   bottom: 20px;
   display: flex;
   justify-content: center;
@@ -140,37 +133,12 @@ header .logo {
   transform: scale(0.5) translateY(-15px);
 }
 
-.menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.menu ul {
-  position: relative;
-}
-.menu ul li {
-  list-style: none;
-}
-.menu ul li a {
-  text-decoration: none;
-  font-size: 24px;
-  color: white;
-}
-.menu ul li a:hover {
-  color: #03a9f4; 
-}
-
 @media (max-width: 991px) {
   .showcase,
   .showcase header {
     padding: 40px;
   }
-  .text h2 {
+  .header h2 {
     font-size: 3em;
   }
   .text h3 {
@@ -190,7 +158,6 @@ a {
 }
 
 .logo {
-	margin: 0;
 	font-size: 2.55em;
 }
 
