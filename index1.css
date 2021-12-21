@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: #03a9f4;
 }
 
 @media screen and (max-width: 650px) {
@@ -29,12 +29,12 @@ a {
 }
 
 .logo {
-  margin-left: 60px;
+  margin-left: 4%;
 	font-size: 2.55em;
 }
 
 .main-nav {
-  margin-right: 60px;
+  margin-right: 4%;
 	margin-top: 5px;
 }
 
@@ -47,10 +47,9 @@ a {
 }
 
 .main-nav a {
-	color: whitesmoke;
+	color: #f5f5f5;
 	font-size: 1.25em;
 }
-
 .main-nav a:hover {
 	color: whitesmoke;
 }
@@ -78,4 +77,26 @@ a {
 		flex-direction: row;
 		justify-content: space-between;
 	}
+}
+
+.social {
+  position: absolute;
+  z-index: 10;
+  left: 4%;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li {
+  list-style: none;
+}
+.social li a {
+  display: inline-block;
+  margin-right: 20px;
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+.social li a:hover {
+  transform: scale(0.5) translateY(-15px);
 }
