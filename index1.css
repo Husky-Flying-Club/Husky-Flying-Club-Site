@@ -158,7 +158,7 @@ a {
 }
 
 .social {
-  position: fixed;
+  position: static;
   left: 8%;
   bottom: 0;
   display: flex;
