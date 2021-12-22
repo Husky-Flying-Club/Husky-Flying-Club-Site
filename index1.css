@@ -313,15 +313,20 @@ a {
   }
   .col-text div p {
     padding: 1em;
+    margin-top: -60px;
   }
   .Aligner-item {
     width: 90%;
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 350px) {
   body {
     margin-top: 40%;
+  }
+  
+  .col-text div p {
+    margin-top: 0px;
   }
 }
 @media (max-width: 240px) {
