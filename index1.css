@@ -117,10 +117,10 @@ a {
 	}
 }
 
-.about-section{
-  margin-bottom: 2%;
+.section{
+  margin-bottom: 1em;
 }
-.about-section p {
+.section p {
   text-align: center;
   color: whitesmoke;
 }
@@ -145,6 +145,10 @@ a {
   clear: both;
   display: table;
 }
+.container a {
+  text-decoration: none;
+  font-weight: bold;
+}
 .container p {
   font-size: 11pt;
 }
@@ -154,9 +158,9 @@ a {
 }
 
 .social {
-  position: absolute;
+  position: fixed;
   left: 8%;
-  margin-bottom: 40px;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
