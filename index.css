@@ -135,6 +135,9 @@ header .logo {
   .header h2 {
     font-size: 3em;
   }
+  .text {
+    margin-left: -3%;
+  }
   .text h3 {
     font-size: 1.8em;
   }
