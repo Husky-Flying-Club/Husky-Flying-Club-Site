@@ -138,6 +138,9 @@ header .logo {
   .text h3 {
     font-size: 2em;
   }
+  .text p {
+    font-size: 1.2em;
+  }
 }
 
 h1,
