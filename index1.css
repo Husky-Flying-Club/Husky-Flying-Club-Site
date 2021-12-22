@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  margin-top: 10%;
+  margin-top: 8%;
   /* background-color: #03a9f4; */
   background-color: #474e5d;
 }
@@ -28,7 +28,7 @@ header .logo {
 
 @media (max-width: 991px) {
   body {
-    margin-top: 300px;
+    margin-top: 280px;
   }
   .showcase,
   .showcase header {
@@ -90,7 +90,7 @@ a {
 
 @media (min-width: 769px) {
   body {
-    margin-top: 20%;
+    margin-top: 160px;
   }
 
 	.header,
@@ -120,7 +120,7 @@ a {
 
 @media (min-width: 1150px) {
   body {
-    margin-top: 120px;
+    margin-top: 115px;
   }
 	.header {
 		flex-direction: row;
@@ -178,8 +178,11 @@ a {
 
 /* Social Menu */
 .social {
-  position: static;
-  bottom: 0;
+  position: fixed;
+  margin: auto;
+  max-width: 100%;
+  width: 100%;
+  bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,4 +198,77 @@ a {
 }
 .social li a:hover {
   transform: scale(0.5) translateY(-15px);
+}
+
+.col-text {
+  height: 34em;
+}
+.grid-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  flex-direction: row; 
+  -webkit-flex-direction: row;
+  margin-left: 2em;
+}
+.col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.col-left {
+  -webkit-box-ordinal-group:-1;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+.col-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Aligner-item {
+  width: 80%;
+}
+.col-image {
+  background-size: cover;
+  background-position:center center;
+}
+
+.col-text div p {
+  padding: 1em;
+  color: whitesmoke;
+  font-size: 14pt;
+}
+
+@media (max-width: 640px) {
+  .grid-flex {
+    width: 95%;
+    margin-left: 2.5%;
+    height: 44em;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column; 
+   }
+  .col {
+    order:vertical;
+  }
+  .col-left {
+    -webkit-box-ordinal-group:0;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  .col-text div p {
+    padding: 1em;
+  }
+  .Aligner-item {
+    width: 90%;
+  }
 }
