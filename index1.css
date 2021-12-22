@@ -28,7 +28,7 @@ header .logo {
 
 @media (max-width: 991px) {
   body {
-    margin-top: 280px;
+    margin-top: 5em;
   }
   .showcase,
   .showcase header {
@@ -316,5 +316,16 @@ a {
   }
   .Aligner-item {
     width: 90%;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    margin-top: 40%;
+  }
+}
+@media (max-width: 240px) {
+  body {
+    margin-top: 70%;
   }
 }
