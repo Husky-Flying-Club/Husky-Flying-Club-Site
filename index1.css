@@ -42,6 +42,12 @@ header .logo {
   }
 }
 
+@media (max-width: 800px) {
+  .row {
+    margin-left: calc(50% - 8em);
+  }
+}
+
 h1,
 h2,
 h3,
@@ -105,6 +111,11 @@ a {
 		flex-direction: row;
 		justify-content: space-between;
 	}
+
+  .row {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 1150px) {
@@ -115,19 +126,26 @@ a {
 		flex-direction: row;
 		justify-content: space-between;
 	}
+
+  .row {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .section{
-  margin-bottom: 1em;
+  margin-bottom: 1.4em;
 }
 .section p {
+  font-size: 16pt;
   text-align: center;
   color: whitesmoke;
 }
-  
+
+/* Leadership Profiles */
 .column {
   float: left;
-  width: 14em;
+  width: 16em;
   margin-bottom: 16px;
   padding: 0 8px;
 }
@@ -146,17 +164,19 @@ a {
   display: table;
 }
 .container a {
+  font-size: 15pt;
   text-decoration: none;
   font-weight: bold;
 }
 .container p {
-  font-size: 11pt;
+  font-size: 13pt;
 }
 .container h3 {
   font-size: 12pt;
   font-weight: bold;
 }
 
+/* Social Menu */
 .social {
   position: static;
   bottom: 0;
