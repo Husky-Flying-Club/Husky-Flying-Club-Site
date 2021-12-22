@@ -25,15 +25,6 @@ header .logo {
   cursor: pointer;
 }
 
-.overlay {
-  position: absolute;
-  right: 0; bottom: 0;
-  min-width: 100%; min-height: 100%;
-  width: auto; height: auto;
-  /* background: #03a9f4; */
-  mix-blend-mode: overlay;
-}
-
 .showcase {
   position: fixed;
   left: 0; right: 0; bottom: 0;
@@ -58,6 +49,7 @@ header .logo {
   object-fit: cover;
   /* opacity: 1.0; */
 }
+
 .overlay {
   position: fixed;
   right: 0; bottom: 0;
