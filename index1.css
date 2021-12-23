@@ -144,39 +144,27 @@ a {
 
 @media (min-width: 1250px) {
   body {
-    margin-top: 180px;
+    margin-top: 115px;
   }
+
+  .row {
+    display: float;
+    justify-content: center;
+  }
+
 	.header {
 		flex-direction: row;
 		justify-content: space-between;
 	}
-
-  .row {
-    display: flex;
-    justify-content: center;
-  }
-
   .header2 {
     display: none;
   }
 }
 
-@media (min-width: 1250px) {
-  body {
-    margin-top: 115px;
-  }
-	.header {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
+@media (min-width: 1530px) {
   .row {
     display: flex;
     justify-content: center;
-  }
-
-  .header2 {
-    display: none;
   }
 }
 
@@ -225,13 +213,13 @@ a {
 /* Social Menu */
 .social {
   position: fixed;
-  z-index: 10;
   max-width: 100%; width: 100%;
   margin: auto;
   bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 .social li {
   list-style: none;
