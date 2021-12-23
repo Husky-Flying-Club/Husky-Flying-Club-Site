@@ -213,6 +213,7 @@ a {
 .container a {
   font-size: 15pt;
   text-decoration: none;
+  font-weight: bold;
 }
 .container p {
   font-size: 13pt;
