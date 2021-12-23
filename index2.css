@@ -7,8 +7,17 @@
 }
 body {
   margin-top: 8%;
-  /* background-color: #03a9f4; */
   background-color: black;
+  /* background-color: #03a9f4; */
+}
+h1,
+h2,
+h3,
+a {
+	color: whitesmoke;
+}
+a {
+	text-decoration: none;
 }
 
 header {
@@ -26,7 +35,6 @@ header .logo {
   text-transform: uppercase;
   cursor: pointer;
 }
-
 .header {
 	padding-top: .2em;
 	padding-bottom: .2em;
@@ -34,23 +42,48 @@ header .logo {
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 }
 
+.logo {
+	font-size: 2.55em;
+}
+
+.main-nav {
+	margin-top: 5px;
+}
+.main-nav a {
+	color: whitesmoke;
+	font-size: 1.25em;
+}
+.main-nav a:hover {
+	color: whitesmoke;
+}
+
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+
 @media (max-width: 991px) {
   body {
     margin-top: 5em;
   }
-  .showcase,
-  .showcase header {
-    padding: 40px;
-  }
-  .header h2 {
-    font-size: 3em;
-  }
+
   .text h3 {
     font-size: 2em;
   }
 
+  /* Mobile Header */
   .header {
     display: none;
+  }
+  .header2 {
+    padding-top: .2em;
+    padding-bottom: .2em;
+    background-color: black;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
   }
   .header2 .logo {
     font-size: 16pt;
@@ -58,6 +91,11 @@ header .logo {
     text-transform: uppercase;
     cursor: pointer;
   }
+  .header h2 {
+    font-size: 3em;
+  }
+
+  /* Mobile Navigation */
   .toggle {
     position: relative;
     width: 60px;
@@ -75,111 +113,9 @@ header .logo {
     background-position: center;
     cursor: pointer;
   }
-
-  .header2 {
-    padding-top: .2em;
-    padding-bottom: .2em;
-    background-color: black;
-    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-  }
 }
 
-@media (max-width: 800px) {
-  .row {
-    margin-left: calc(50% - 8em);
-  }
-}
-
-h1,
-h2,
-h3,
-a {
-	color: whitesmoke;
-}
-a {
-	text-decoration: none;
-}
-
-.logo {
-	font-size: 2.55em;
-}
-
-.main-nav {
-	margin-top: 5px;
-}
-
-.logo a,
-.main-nav a {
-	padding: 10px 15px;
-	text-transform: uppercase;
-	text-align: center;
-	display: block;
-}
-.main-nav a {
-	color: whitesmoke;
-	font-size: 1.25em;
-}
-.main-nav a:hover {
-	color: whitesmoke;
-}
-
-@media (min-width: 769px) {
-  body {
-    margin-top: 160px;
-  }
-
-	.header,
-	.main-nav {
-		display: flex;
-	}
-	.header {
-		flex-direction: column;
-		align-items: center;
-	}
-
-  .header2 {
-    display: none;
-  }
-}
-
-@media (min-width: 1250px) {
-  body {
-    margin-top: 180px;
-  }
-	.header {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-  .row {
-    display: flex;
-    justify-content: center;
-  }
-
-  .header2 {
-    display: none;
-  }
-}
-
-@media (min-width: 1250px) {
-  body {
-    margin-top: 115px;
-  }
-	.header {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-  .row {
-    display: flex;
-    justify-content: center;
-  }
-
-  .header2 {
-    display: none;
-  }
-}
-
+/* Section */
 .section{
   margin-bottom: 1.4em;
 }
@@ -213,7 +149,6 @@ a {
 .container a {
   font-size: 15pt;
   text-decoration: none;
-  font-weight: bold;
 }
 .container p {
   font-size: 13pt;
@@ -226,13 +161,13 @@ a {
 /* Social Menu */
 .social {
   position: fixed;
-  z-index: 10;
   max-width: 100%; width: 100%;
   margin: auto;
   bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 .social li {
   list-style: none;
@@ -245,6 +180,57 @@ a {
 }
 .social li a:hover {
   transform: scale(0.5) translateY(-15px);
+}
+
+@media (max-width: 800px) {
+  .row {
+    margin-left: calc(50% - 8em);
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+    margin-top: 160px;
+  }
+
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+  .header2 {
+    display: none;
+  }
+}
+
+@media (min-width: 1250px) {
+  body {
+    margin-top: 115px;
+  }
+
+  .row {
+    display: float;
+    justify-content: center;
+  }
+
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+  .header2 {
+    display: none;
+  }
+}
+
+@media (min-width: 1530px) {
+  .row {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .col-text {
@@ -329,6 +315,7 @@ a {
     margin-top: 0px;
   }
 }
+
 @media (max-width: 240px) {
   body {
     margin-top: 70%;
