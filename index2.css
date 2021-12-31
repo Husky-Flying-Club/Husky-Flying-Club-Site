@@ -201,7 +201,6 @@ header .logo {
 		flex-direction: column;
 		align-items: center;
 	}
-
   .header2 {
     display: none;
   }
@@ -223,6 +222,9 @@ header .logo {
 	}
   .header2 {
     display: none;
+  }
+	.logo a {
+    font-size: 34pt;
   }
 }
 

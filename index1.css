@@ -85,11 +85,7 @@ header .logo {
   body {
     margin-top: 5em;
   }
-
-  .text h3 {
-    font-size: 2em;
-  }
-
+  
   /* Mobile Header */
   .header {
     display: none;
@@ -194,53 +190,6 @@ section p {
   transform: scale(0.5) translateY(-15px);
 }
 
-/* Display */
-.col-text {
-  height: 34em;
-}
-.grid-flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  flex-direction: row; 
-  -webkit-flex-direction: row;
-  margin-left: 2em;
-}
-.col {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-.col-left {
-  -webkit-box-ordinal-group:-1;
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-.col-text{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.Aligner-item {
-  width: 80%;
-}
-.col-image {
-  background-size: cover;
-  background-position:center center;
-}
-.col-text div p {
-  padding: 1em;
-  color: whitesmoke;
-  font-size: 14pt;
-}
-
 /* Sections */
 .mission-section {
   display: block;
@@ -328,42 +277,12 @@ section p {
   body {
     margin-top: 40%;
   }
-  
-  .col-text div p {
-    margin-top: 0px;
-  }
 }
 
-@media (max-width: 640px) {
-  .grid-flex {
-    width: 95%;
-    margin-left: 2.5%;
-    height: 44em;
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    flex-direction: column; 
-   }
-  .col {
-    order:vertical;
-  }
-  .col-left {
-    -webkit-box-ordinal-group:0;
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-  }
-  .col-text div p {
-    padding: 1em;
-    margin-top: -60px;
-  }
-  .Aligner-item {
-    width: 90%;
-  }
-
+@media (max-width: 650px) {
   .mission-section {
-    height: 90vh;
+    height: 95vh;
   }
-
   .team-section {
     height: auto;
   }
@@ -388,15 +307,13 @@ section p {
 		flex-direction: column;
 		align-items: center;
 	}
-
   .header2 {
     display: none;
   }
 
   .mission-section {
-    height: 85vh;
+    height: 86vh;
   }
-
   .team-section {
     height: auto;
   }
@@ -407,11 +324,6 @@ section p {
     margin-top: 115px;
   }
 
-  .row {
-    display: float;
-    justify-content: center;
-  }
-
 	.header {
 		flex-direction: row;
 		justify-content: space-between;
@@ -419,11 +331,18 @@ section p {
   .header2 {
     display: none;
   }
+	.logo a {
+    font-size: 34pt;
+  }
+
+  .row {
+    display: float;
+    justify-content: center;
+  }
 
   .mission-section {
     height: 95vh;
   }
-
   .team-section {
     height: 100vh;
   }
