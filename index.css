@@ -283,11 +283,6 @@ header .logo {
   #menuToggle input:checked ~ ul {
     transform: none;
   }
-
-  /* Hide Social Bar */
-  #menuToggle input:checked ~ .social {
-    display: hidden;
-  }
 }
 
 @media (min-width: 769px) {
