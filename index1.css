@@ -6,9 +6,9 @@
   box-sizing: border-box;
 }
 body {
+  background-color: black;
+  /* background-color: #474e5d; */
   margin-top: 8%;
-  background-color: #474e5d;
-  /* background-color: #03a9f4; */
 }
 h1,
 h2,
@@ -116,9 +116,6 @@ header .logo {
 }
 
 /* Section */
-.section{
-  margin-bottom: 1.4em;
-}
 .section p {
   font-size: 16pt;
   text-align: center;
@@ -235,7 +232,6 @@ header .logo {
   }
 }
 
-
 @media (max-width: 350px) {
   body {
     margin-top: 40%;
@@ -322,4 +318,21 @@ header .logo {
     display: flex;
     justify-content: center;
   }
+}
+
+.mission-section {
+  display: block;
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  padding-top: 5%;
+  margin-top: -4%;
+}
+
+.team-section {
+  display: block;
+  background-color: #14b5d1;
+  height: 100vh;
+  width: 100%;
+  padding-top: 5%;
 }
