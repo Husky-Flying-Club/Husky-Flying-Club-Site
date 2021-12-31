@@ -119,7 +119,7 @@ header .logo {
     transition: color 0.3s ease;
   }
   #menuToggle a:hover {
-    color: tomato;
+    color: turquoise;
   }
   #menuToggle input {
     display: block;
@@ -175,7 +175,7 @@ header .logo {
   #menu {
     position: absolute;
     left: calc(-100vw + 50px);
-    width: 100vw; height: 108vh;
+    width: 105vw; height: 108vh;
     margin: -100px 0 0 0px;
     padding: 50px;
     padding-top: 125px;
@@ -193,10 +193,7 @@ header .logo {
     padding: 10px 0;
     font-size: 22px;
   }
-  /*
-  * And let's slide it in from the left
-  */
-  #menuToggle input:checked ~ ul{
+  #menuToggle input:checked ~ ul {
     transform: none;
   }
 }
