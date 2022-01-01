@@ -200,9 +200,15 @@ header .logo {
 
 /* Section */
 section p {
-  font-size: 16pt;
+  font-size: 1.6em;
   text-align: center;
   color: whitesmoke;
+}
+section h2 {
+  font-size: 2em;
+  text-align: center;
+  color: white;
+  margin-top: 10%;
 }
 
 /* Leadership Profiles */

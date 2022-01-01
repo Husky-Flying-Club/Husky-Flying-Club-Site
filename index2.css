@@ -182,16 +182,6 @@ header .logo {
   }
 }
 
-/* Section */
-.section {
-  margin-bottom: 1.4em;
-}
-.section p {
-  font-size: 16pt;
-  text-align: center;
-  color: whitesmoke;
-}
-
 /* Social Menu */
 .social {
   position: fixed;
@@ -241,7 +231,7 @@ header .logo {
 }
 
 @media (min-width: 1250px) {
-  body {
+  html {
     margin-top: 4vh;
   }
 
