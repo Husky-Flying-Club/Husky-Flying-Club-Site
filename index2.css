@@ -242,7 +242,7 @@ header .logo {
 
 @media (min-width: 1250px) {
   body {
-    margin-top: 115px;
+    margin-top: 4vh;
   }
 
   .row {
