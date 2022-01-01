@@ -5,11 +5,14 @@
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
-body {
+body, html {
   background-color: black;
   /* background-color: #03a9f4; */
-  margin-top: 8%;
 }
+html {
+  margin-top: 5vh;
+}
+
 h1,
 h2,
 h3,
@@ -67,10 +70,6 @@ header .logo {
 
 
 @media (max-width: 991px) {
-  body {
-    margin-top: 5em;
-  }
-  
   /* Mobile Header */
   .header {
     display: none;
@@ -184,46 +183,13 @@ header .logo {
 }
 
 /* Section */
-.section{
+.section {
   margin-bottom: 1.4em;
 }
 .section p {
   font-size: 16pt;
   text-align: center;
   color: whitesmoke;
-}
-
-/* Leadership Profiles */
-.column {
-  float: left;
-  width: 16em;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-.card {
-  background-color: #333;
-  box-shadow: 0 10% 10em 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
-.container {
-  color: white;
-  padding: 0 16px;
-}
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.container a {
-  font-size: 15pt;
-  text-decoration: none;
-}
-.container p {
-  font-size: 13pt;
-}
-.container h3 {
-  font-size: 12pt;
-  font-weight: bold;
 }
 
 /* Social Menu */
@@ -258,7 +224,7 @@ header .logo {
 
 @media (min-width: 769px) {
   body {
-    margin-top: 160px;
+    margin-top: 15vh;
   }
 
 	.header,
@@ -301,12 +267,17 @@ header .logo {
     display: flex;
     justify-content: center;
   }
+
+  html {
+    margin-top: 15vh;
+  }
 }
 
 .col-text {
   height: 34em;
 }
 .grid-flex {
+  background-color: black;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -356,7 +327,7 @@ header .logo {
     height: 44em;
     display: -webkit-flex;
     -webkit-flex-direction: column;
-    flex-direction: column; 
+    flex-direction: column;
    }
   .col {
     order:vertical;
