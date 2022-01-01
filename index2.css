@@ -231,7 +231,7 @@ header .logo {
 }
 
 @media (min-width: 1250px) {
-  html {
+  body {
     margin-top: 4vh;
   }
 
