@@ -280,7 +280,7 @@ section h2 {
 .team-section {
   height: 100vh; width: 100%;
   display: block;
-  background-color: #14b5d1;
+  background: url(/content/team-background.jpg);
   padding-top: 5%;
 }
 
