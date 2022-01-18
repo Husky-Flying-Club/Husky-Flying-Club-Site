@@ -309,7 +309,7 @@ section h2 {
 .scroll-down:before {
   position: absolute;
   top: calc(50% - 8px);
-  left: calc(50% - 6px);
+  left: calc(50% - 7px);
   width: 12px; height: 12px;
   transform: rotate(-45deg);
   display: block;
