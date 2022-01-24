@@ -328,6 +328,9 @@ header .logo {
     -ms-flex-order: 0;
     order: 0;
   }
+  .col-image {
+    margin-top: 20%;
+  }
   .col-text div p {
     padding: 1em;
     margin-top: -60px;
