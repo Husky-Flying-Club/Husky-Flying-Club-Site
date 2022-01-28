@@ -9,9 +9,6 @@ body, html {
   background-color: black;
   /* background-color: #03a9f4; */
 }
-html {
-  margin-top: 5vh;
-}
 
 h1,
 h2,
@@ -70,6 +67,10 @@ header .logo {
 
 
 @media (max-width: 991px) {
+  html {
+    margin-top: 10vh;
+  }
+  
   /* Mobile Header */
   .header {
     display: none;
@@ -206,15 +207,9 @@ header .logo {
   transform: scale(0.5) translateY(-15px);
 }
 
-@media (max-width: 800px) {
-  .row {
-    margin-left: calc(50% - 8em);
-  }
-}
-
 @media (min-width: 769px) {
-  body {
-    margin-top: 15vh;
+  html {
+    margin-top: 20vh;
   }
 
 	.header,
@@ -231,10 +226,6 @@ header .logo {
 }
 
 @media (min-width: 1250px) {
-  body {
-    margin-top: 4vh;
-  }
-
   .row {
     display: float;
     justify-content: center;
@@ -253,13 +244,13 @@ header .logo {
 }
 
 @media (min-width: 1530px) {
+  html {
+    margin-top: 15vh;
+  }
+
   .row {
     display: flex;
     justify-content: center;
-  }
-
-  html {
-    margin-top: 15vh;
   }
 }
 
