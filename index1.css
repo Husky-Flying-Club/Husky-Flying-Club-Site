@@ -6,9 +6,9 @@
   box-sizing: border-box;
 }
 body {
+  margin-top: 8%;
   background-color: black;
   /* background-color: #474e5d; */
-  margin-top: 8%;
 }
 h1,
 h2,
@@ -317,6 +317,15 @@ section h2 {
   border-width: 0px 0 2px 2px;
 }
 
+/* Team Section */
+.team-section {
+  background: url(content/Team-Background.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 @keyframes bounce {
   0%,
   100%,
@@ -349,9 +358,33 @@ section h2 {
   section p {
     font-size: 1em;
   }
+
+  .team1 {
+    display: contents;
+  }
+  .team2 {
+    display: none;
+  }
+  .team3 {
+    display: none;
+  }
 }
 
 @media (max-width: 650px) {
+  .row {
+    margin-left: calc(50% - 8em);
+  }
+  
+  .team1 {
+    display: contents;
+  }
+  .team2 {
+    display: none;
+  }
+  .team3 {
+    display: none;
+  }
+
   .mission-section {
     height: 95vh;
   }
@@ -364,13 +397,23 @@ section h2 {
   }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 650px) {
   .row {
-    margin-left: calc(50% - 8em);
+    margin-left: calc(50% - 16em);
+  }
+  
+  .team1 {
+    display: none;
+  }
+  .team2 {
+    display: none;
+  }
+  .team3 {
+    display: contents;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 770px) {
   body {
     margin-top: 160px;
   }
@@ -393,6 +436,22 @@ section h2 {
   .team-section {
     height: auto;
   }
+
+  .row {
+    display: float;
+    justify-content: center;
+    margin-left: calc(50% - 24em);
+  }
+
+  .team1 {
+    display: none;
+  }
+  .team2 {
+    display: contents;
+  }
+  .team3 {
+    display: none;
+  }
 }
 
 @media (min-width: 1250px) {
@@ -411,16 +470,27 @@ section h2 {
     font-size: 34pt;
   }
 
-  .row {
-    display: float;
-    justify-content: center;
-  }
-
   .mission-section {
     height: 95vh;
   }
   .team-section {
     height: 100vh;
+  }
+
+  .row {
+    display: float;
+    justify-content: center;
+    margin-left: calc(50% - 24em);
+  }
+
+  .team1 {
+    display: none;
+  }
+  .team2 {
+    display: contents;
+  }
+  .team3 {
+    display: none;
   }
 }
 
@@ -428,9 +498,23 @@ section h2 {
   .row {
     display: flex;
     justify-content: center;
+    margin-left: 0;
   }
 
   .mission-section {
     height: 100vh;
+  }
+  .team-section {
+    height: 100vh;
+  }
+
+  .team1 {
+    display: contents;
+  }
+  .team2 {
+    display: none;
+  }
+  .team3 {
+    display: none;
   }
 }
