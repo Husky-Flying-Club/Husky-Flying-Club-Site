@@ -50,7 +50,7 @@ header .logo {
 }
 .main-nav a {
 	color: whitesmoke;
-	font-size: 1.25em;
+	font-size: 1.3em;
 }
 .main-nav a:hover {
 	color: whitesmoke;
@@ -317,5 +317,11 @@ header .logo {
   }
 	.logo a {
     font-size: 34pt;
+  }
+}
+
+@media (min-width: 1530px) {
+  .main-nav a {
+    font-size: 1.4em;
   }
 }

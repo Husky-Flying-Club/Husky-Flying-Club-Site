@@ -66,7 +66,7 @@ header .logo {
 }
 .main-nav a {
 	color: whitesmoke;
-	font-size: 1.25em;
+	font-size: 1.3em;
 }
 .main-nav a:hover {
 	color: whitesmoke;
@@ -80,6 +80,48 @@ header .logo {
 	display: block;
 }
 
+/* Join Banner */
+#join-resources {
+  position: fixed;
+  right: -70px;
+  top: 50%;
+  width: 170px;
+  height: 30px;
+  transform: rotate(90deg);
+  background-color: gray;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  z-index: 3;
+  color: white;
+  font-family: "Encode Sans", sans-serif;
+  text-align: center;
+  display: inline-block;
+  padding: 0px;
+  transition: 0.2s;
+}
+
+#join-resources-text {
+  margin: 0px;
+  font-size: 1.2em;
+  line-height: 25px;
+  vertical-align: middle;
+  height: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+#close-join-x {
+  display: inline-block;
+  color: #4b2e83;
+  font-size: 33px;
+  height: 20px;
+  width: 20px;
+  line-height: 25px;
+  vertical-align: middle;
+  transform: rotate(45deg);
+  margin-left: 10px;
+  cursor: pointer;
+}
 
 @media (max-width: 991px) {
   body {
@@ -200,12 +242,12 @@ header .logo {
 
 /* Section */
 section p {
-  font-size: 1.5em;
+  font-size: 1.8em;
   text-align: center;
   color: whitesmoke;
 }
 section h2 {
-  font-size: 2.2em;
+  font-size: 2.4em;
   text-align: center;
   color: white;
   margin-top: 10vh;
@@ -280,7 +322,7 @@ section h2 {
 .team-section {
   height: 100vh; width: 100%;
   display: block;
-  padding-top: 5%;
+  padding-top: 3%;
 }
 
 /* Scroll Button */
@@ -355,8 +397,16 @@ section h2 {
 }
 
 @media (max-width: 348px) {
+  body {
+    margin-top: 5vh;
+  }
+
+  /* Section */
   section p {
     font-size: 1em;
+  }
+  section h2 {
+    font-size: 1.6em;
   }
 
   .team1 {
@@ -371,6 +421,10 @@ section h2 {
 }
 
 @media (max-width: 650px) {
+  body {
+    margin-top: 5vh;
+  }
+
   .row {
     margin-left: calc(50% - 8em);
   }
@@ -385,21 +439,33 @@ section h2 {
     display: none;
   }
 
+  /* Section */
+  section p {
+    font-size: 1.4em;
+  }
+  section h2 {
+    font-size: 2em;
+  }
+
   .mission-section {
     height: 95vh;
   }
   .team-section {
     height: auto;
   }
-
-  section p {
-    font-size: 1.3em;
-  }
 }
 
 @media (min-width: 650px) {
   .row {
     margin-left: calc(50% - 16em);
+  }
+
+  /* Section */
+  section p {
+    font-size: 1.6em;
+  }
+  section h2 {
+    font-size: 2.2em;
   }
   
   .team1 {
@@ -413,9 +479,9 @@ section h2 {
   }
 }
 
-@media (min-width: 770px) {
+@media (min-width: 770px) {  
   body {
-    margin-top: 160px;
+    margin-top: 120px;
   }
 
 	.header,
@@ -430,11 +496,19 @@ section h2 {
     display: none;
   }
 
+  /* Section */
+  section p {
+    font-size: 1.6em;
+  }
+  section h2 {
+    font-size: 2.2em;
+  }
+
   .mission-section {
-    height: 90vh;
+    height: 95vh;
   }
   .team-section {
-    height: auto;
+    height: 100vh;
   }
 
   .row {
@@ -454,9 +528,9 @@ section h2 {
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1260px) {
   body {
-    margin-top: 115px;
+    margin-top: 120px;
   }
 
 	.header {
@@ -468,6 +542,14 @@ section h2 {
   }
 	.logo a {
     font-size: 34pt;
+  }
+
+  /* Section */
+  section p {
+    font-size: 1.8em;
+  }
+  section h2 {
+    font-size: 2.4em;
   }
 
   .mission-section {
@@ -495,17 +577,29 @@ section h2 {
 }
 
 @media (min-width: 1530px) {
+  .main-nav a {
+    font-size: 1.4em;
+  }
+
+  /* Section */
+  section p {
+    font-size: 1.8em;
+  }
+  section h2 {
+    font-size: 2.4em;
+  }
+
+  .mission-section {
+    height: 95vh;
+  }
+  .team-section {
+    height: 100vh;
+  }
+  
   .row {
     display: flex;
     justify-content: center;
     margin-left: 0;
-  }
-
-  .mission-section {
-    height: 100vh;
-  }
-  .team-section {
-    height: 100vh;
   }
 
   .team1 {
