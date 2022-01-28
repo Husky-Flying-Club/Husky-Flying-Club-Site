@@ -66,7 +66,7 @@ header .logo {
 
 /* Dual Content */
 .col-text {
-  height: 34em;
+  height: 70vh;
 }
 .grid-flex {
   background-color: black;
@@ -109,7 +109,7 @@ header .logo {
 .col-text div p {
   padding: 1em;
   color: whitesmoke;
-  font-size: 14pt;
+  font-size: 1.5em;
 }
 
 
@@ -313,7 +313,7 @@ header .logo {
 
 @media (max-width: 350px) {
   body {
-    margin-top: 40%;
+    margin-top: 5%;
   }
   
   .col-text div p {
