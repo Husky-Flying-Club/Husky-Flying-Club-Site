@@ -296,6 +296,10 @@ section h2 {
   .header2 {
     display: none;
   }
+  
+  .col-text div p {
+    font-size: 1em;
+  }
 }
 
 @media (min-width: 1250px) {
