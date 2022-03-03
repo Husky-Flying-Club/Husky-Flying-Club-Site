@@ -6,9 +6,10 @@
   box-sizing: border-box;
 }
 body {
-  margin-top: 8%;
   background-color: black;
-  /* background-color: #474e5d; */
+}
+html {
+  margin-top: 4vh;
 }
 h1,
 h2,
@@ -422,7 +423,7 @@ section h2 {
 
 @media (max-width: 650px) {
   body {
-    margin-top: 5vh;
+    margin-top: 0;
   }
 
   .row {

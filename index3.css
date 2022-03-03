@@ -5,11 +5,9 @@
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
-body {
+body, html {
   background-color: black;
-}
-html {
-  height: 190vh;
+  height: auto;
 }
 
 h1,
@@ -159,9 +157,10 @@ section h2 {
   font-size: 2.4em;
   text-align: center;
   color: white;
+  margin-top: 10vh;
 }
 .section {
-  margin-top: 25vh;
+  margin-top: 30vh;
 }
 
 @media (max-width: 991px) {
@@ -286,9 +285,9 @@ section h2 {
     margin-top: 20vh;
   }
 
-	.header,
-	.main-nav {
-		display: flex;
+  .header,
+  .main-nav {
+     display: flex;
 	}
 	.header {
 		flex-direction: column;
@@ -309,10 +308,10 @@ section h2 {
     font-size: 2.4em;
   }
 
-	.header {
-		flex-direction: row;
-		justify-content: space-between;
-	}
+  .header {
+	flex-direction: row;
+	justify-content: space-between;
+  }
   .header2 {
     display: none;
   }
@@ -337,16 +336,12 @@ section h2 {
 }
 
 @media (max-width: 640px) {
-  html {
-    height: 200vh;
+  body {
+    height: 8%;
   }
   
   section h2 {
     font-size: 2em;
-  }
-
-  .section {
-    margin-top: 25vh;
   }
 
   .grid-flex {
@@ -367,14 +362,14 @@ section h2 {
     order: 0;
   }
   .col-image {
-    margin-top: 10%;
+    margin-top: 20%;
   }
   .col-text div p {
-    margin-top: -40%;
+    padding: 1em;
     font-size: 1em;
   }
   .Aligner-item {
-    width: 100%;
+    width: 90%;
   }
 }
 
